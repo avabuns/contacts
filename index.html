@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="images/banner.png">
+    <meta property="og:description" content="AVAbuns bakery" />
+    <title>AVAbuns</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Добре там, де нас нема...</h1>
+                <h2>але ми є всюди:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <table class="table">
+                    <tr>
+                        <th>
+                            <i id="instagram" class="fab fa-instagram" style="color:#dc2743;"></i><a href="https://instagram.com/avabuns.bakery?hl=en" target="blank">Instagram</a></th>
+                    </tr>
+                    <tr>
+                        <th><i id="facebook" class="fab fa-facebook-f" style="color: #3b5998;"></i><a href="https://www.facebook.com/avabuns.bakery" target="blank">Facebook</a></th>
+                    </tr>
+                    <tr>
+                        <th><i id="messenger" class="fab fa-facebook-messenger" style="color: #00B2FF;"></i><a href="https://m.me/avabuns.bakery" target="blank">Messenger</a></th>
+                    </tr>
+                    <tr>
+                        <th><i id="telegram" class="fab fa-telegram-plane" style="color: #130f2b;"></i><a href="https://t.me/avabuns" target="blank">Telegram</a></th>
+                    </tr>
+                    <tr>
+                        <th><i id="whatsapp" class="fab fa-whatsapp" style="color: #25d366;"></i><a href="https://wa.me/380980880890" target="blank">WhatsApp</a></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i id="viber" class="fab fa-viber" style="color: #665CAC;"></i>
+                            <a href="viber://chat?number=+380980880890" target="blank">Viber</a>
+                            <i id="warning" class="fas fa-exclamation-circle" style="color: #f27d7d;" data-toggle="tooltip" data-placement="right" title="Посилання дійсне тільки для мобільних пристроїв"></i>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i id="email" class="far fa-envelope-open" style="color: #130f2b;"></i><a target=_blank href="mailto:avabuns.bakery@gmail.com">avabuns.bakery@gmail.com</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a id="number" href="tel:+380980880890"><i id="phonecall" class="fas fa-phone-alt" style="color: #53d769;"></i>+38 (098) 08 80 890</a>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+    <script>
+        let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+        jQuery(document).ready(function($){
+            if(isMobile) {
+                $('#warning').css("display", "none");
+            }
+        });
+
+        jQuery(document).ready(function($){
+            if(!isMobile) {
+                $('body').css("background-image", 'none');
+                $('body').css("background-color", "#EEDCD3")
+            }
+        });
+    </script>
+</body>
+</html>
